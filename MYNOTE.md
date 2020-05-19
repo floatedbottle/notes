@@ -19,10 +19,6 @@
 	+ 配置用户名：`git config --global user.name "xiaoming"`
 	+ 配置邮箱：`git config --global user.email "xiaoming@sina.com"`
 
-## 把大象放进冰箱要几步
-1. 打开冰箱
-2. 放大象
-3. 关上冰箱
 
 ## 把代码存储到.git仓储中
 
@@ -63,13 +59,16 @@
 	
 ## 回退到指定的版本
 - `git reset --hard Head~0`
-	+表示回退到上一次代码提交时的状态
+	
+	+ 表示回退到上一次代码提交时的状态
 - `git reset --hard Head~1`
-	+表示回退到上上次代码提交时的状态
+	
+	+ 表示回退到上上次代码提交时的状态
 - `git reset --hard [版本号]`
-	+可以通过版本号精确的回退到某一次提交时的状态
+	
+	+ 可以通过版本号精确的回退到某一次提交时的状态
 - `git reflog`
-	+列出每一次切换版本的记录：可以看到所有提交的版本号
+	+ 列出每一次切换版本的记录：可以看到所有提交的版本号
 	
 	
 ## 分支
@@ -97,16 +96,16 @@
 	
 ## 提交代码到GitHub（当做git服务器）
 - `git push [地址] master`
-	+示例：`git push https://github.com/floatedbottle/test001.gitmaster`
-	+会把当前分支的内容上传到远程的master分支上
+	+ 示例：`git push https://github.com/floatedbottle/test001.gitmaster`
+	+ 会把当前分支的内容上传到远程的master分支上
 	
 - `git pull [地址] master`
-	+示例：`git pull https://github.com/floatedbottle/test001.git master`
-	+会把分支的数据得到:(*注意，本地要初始化一个仓储！*)
+	+ 示例：`git pull https://github.com/floatedbottle/test001.git master`
+	+ 会把分支的数据得到:(*注意，本地要初始化一个仓储！*)
 
 - `git clone [地址]`
-	+示例：`git clone https://github.com/floatedbottle/test001.git`
-	+会得到远程仓储相同的数据，如果多次执行会覆盖本地内容
+	+ 示例：`git clone https://github.com/floatedbottle/test001.git`
+	+ 会得到远程仓储相同的数据，如果多次执行会覆盖本地内容
 
 
 ## ssh方式上传代码
